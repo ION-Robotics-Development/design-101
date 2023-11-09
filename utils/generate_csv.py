@@ -7,8 +7,8 @@ from utils import generate_city
 
 def generate_sus_csv(iter, cities):
     call_data = []
-    # Generate 10 random calls
-    for i in range(50):
+    # Generate x random calls
+    for i in range(20):
         # Generate a random phone number for the scammer
         
         # Generate a random phone number for the victim
@@ -59,8 +59,8 @@ def generate_normal_csv(iter, cities):
     "+9053" + "".join(str(random.randint(0,9)) for _ in range(8)) : cities[0],
     "+9053" + "".join(str(random.randint(0,9)) for _ in range(8)) : cities[1],
 }
-    # Generate 10 random calls
-    for i in range(50):
+    # Generate x random calls
+    for i in range(20):
         # Generate a random phone number for the scammer
         random_person = random.choice(list(normal_people.keys()))
         # Generate a random phone number for the victim
