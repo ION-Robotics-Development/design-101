@@ -3,7 +3,18 @@ import csv
 import random
 import datetime
 import calendar
+import os
 from utils import generate_city
+
+# Define the CSV file path
+susp_file_path = r".\CSV\Susp.csv"
+normal_file_path = r".\CSV\Normal.csv"
+
+with open(normal_file_path, "w", newline="") as csvfile:
+    pass
+
+with open(susp_file_path, "w", newline="") as csvfile:
+        pass
 
 def generate_sus_csv(iter, cities):
     call_data = []
@@ -26,6 +37,7 @@ def generate_sus_csv(iter, cities):
         
         # Create a dictionary to store the call data
         call = {
+            "Caller ID" : iter+1,
             "Called Number": victim_number,
             "Call Date": call_date,
             "Call Time": call_time,
@@ -36,13 +48,15 @@ def generate_sus_csv(iter, cities):
         # Append the call data to the list
         call_data.append(call)
 
+
     # Create a CSV file to write the call data
-    with open(rf".\CSV\Susp_{iter+1}.csv", "w", newline="") as csvfile:
+    with open(susp_file_path, "a", newline="") as csvfile:
         # Create a CSV writer object
         writer = csv.DictWriter(csvfile, fieldnames=call_data[0].keys())
         
-        # Write the header row
-        writer.writeheader()
+        # Write the header row only if the file is empty
+        if os.stat(susp_file_path).st_size == 0:
+            writer.writeheader()
         
         # Write the call data rows
         for call in call_data:
@@ -78,6 +92,7 @@ def generate_normal_csv(iter, cities):
         
         # Create a dictionary to store the call data
         call = {
+            "Caller ID" : iter+1,
             "Called Number": called_number,
             "Call Date": call_date,
             "Call Time": call_time,
@@ -89,12 +104,13 @@ def generate_normal_csv(iter, cities):
         call_data.append(call)
 
     # Create a CSV file to write the call data
-    with open(rf".\CSV\Normal_{iter+1}.csv", "w", newline="") as csvfile:
+    with open(normal_file_path, "a", newline="") as csvfile:
         # Create a CSV writer object
         writer = csv.DictWriter(csvfile, fieldnames=call_data[0].keys())
         
-        # Write the header row
-        writer.writeheader()
+        # Write the header row only if the file is empty
+        if os.stat(normal_file_path).st_size == 0:
+            writer.writeheader()
         
         # Write the call data rows
         for call in call_data:
