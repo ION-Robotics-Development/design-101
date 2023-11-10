@@ -1,0 +1,7 @@
+INPUT:
+
+I will give you CSV data which consists of call logs of people. First CSV file will contain normal people making calls. Second file will contain scammers making calls. You should train yourself on these files by analyzing different call locations. (In general, normal people don't have much different call locations compared to scammers). Don't write out any analysis until I tell you to do so. I will now provide you with first CSV file, okay?
+
+Now I'll provide the second file containing scammers' call logs. Okay?
+
+Now I'll give you a random CSV file containing  single person's call data. By using the data I've provided you before, calculate the amount of different locations called "per caller ID". If the person's amount of different locations call data is closer to the second CSV file I've provided (scammers), flag the data as UNUSUAL behaviour. If the amount of different locations called is closer to the first CSV file I've provided (for normal people), flag it as USUAL behaviour. Don't calculate average locations per call, simply work with the absolute value of number of different locations called. Explain briefly with maxiumum of 100 words. Do you understand?
