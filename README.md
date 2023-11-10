@@ -17,7 +17,8 @@ The "DESIGN-101" repository is a collection of content and projects related to t
 
 Before you begin, ensure you have the following prerequisites installed:
 
-- **TBA**
+- g4f==0.1.8.1
+- python-dotenv==1.0.0
 
 ## Getting Started
 
@@ -37,7 +38,7 @@ Explore the different directories within the repository to find examples, resour
 To run specific scripts or examples, use the following command:
 
 ```bash
-python main.py
+python aimodel_api.py
 ```
 
 
