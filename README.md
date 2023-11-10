@@ -7,7 +7,6 @@ Welcome to the "DESIGN-101" repository of ION Robotics & Development. This repos
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## About DESIGN-101
@@ -18,9 +17,7 @@ The "DESIGN-101" repository is a collection of content and projects related to t
 
 Before you begin, ensure you have the following prerequisites installed:
 
-- [g4f](https://pypi.org/project/g4f/)
-- [gtts](https://pypi.org/project/gTTS/)
-- Python 3.10 or newer
+- **TBA**
 
 ## Getting Started
 
@@ -43,15 +40,6 @@ To run specific scripts or examples, use the following command:
 python main.py
 ```
 
-## Contributing
-
-We welcome contributions from the community to enrich the content of DESIGN-101. If you have design-related projects, examples, or resources to share, please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch for your contribution.
-3. Make your changes or add your content.
-4. Test your changes.
-5. Submit a pull request, explaining the purpose and impact of your contribution.
 
 ## License
 
