@@ -11,7 +11,7 @@ Welcome to the "DESIGN-101" repository of ION Robotics & Development. This repos
 
 ## About DESIGN-101
 
-The "DESIGN-101" repository is a collection of content and projects related to the DESIGN-101 contest hosted by TurkTelekom at Izmir Institute of Technology (IZTECH). Current project is about creating a chatbot that will help automate customer service and reduce the cost of operating.
+The "DESIGN-101" repository is a collection of content and projects related to the DESIGN-101 contest hosted by TurkTelekom at Izmir Institute of Technology (IZTECH). Current project is about reducing scams by phone calls and automate the process of flagging suspicious scammers using fine-tuned artifical intelligence.
 
 ## Prerequisites
 
