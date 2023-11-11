@@ -19,6 +19,9 @@ Before you begin, ensure you have the following prerequisites installed:
 
 - g4f==0.1.8.1
 - python-dotenv==1.0.0
+- python==3.12.0
+
+Make sure to use python==3.12.0 as it can cause conflicts with imported libraries on lower versions.
 
 ## Getting Started
 
